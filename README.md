@@ -44,6 +44,9 @@ https://www.catycan.com
 
 https://www.timoteopetshop.com 
 
+(Login y registro)
+https://okhosting.com/blog/los-datos-en-una-tienda-on-line/
+
 ### **Tablero de Trabajo**
 Url Trello: https://trello.com/b/jGI8j2d1/grupo3c13
 
