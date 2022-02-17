@@ -23,3 +23,14 @@ Sus integrantes son:
 -Luciano Escobar: Hola! Me presento, Soy Luciano Escobar, tengo 32 años. 
 
 ------------
+
+### **Paginas en las que nos inspiramos:**
+
+http://petmania.com/ (Home)
+https://mispichos.com/
+
+https://www.puppis.com.ar  (Detalle del producto)
+https://www.catycan.com
+
+https://www.timoteopetshop.com (Carrito de compras)
+
