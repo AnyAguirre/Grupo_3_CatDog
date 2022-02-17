@@ -7,7 +7,7 @@
 *Desde CatDog comercializamos productos online tales como alimentos variados, accesorios, productos de higiene y brindamos servicios a tus mascotas.
 Apuntamos al público dueño de una mascota brindándoles una forma de comprar simple, rápida y segura.*
 
-------------
+-------------
 
 #### **¿Quiénes somos?**
 *CatDog es un emprendimiento joven conformado por 4 compañeros, como amamos a nuestras mascotas como vos, y los cuidamos con el mismo cariño y amor que nos cuidamos nosotros mismos. Nos apasiona ver que sean felices, estén saludables y que no les falte nada, por eso creamos CatDog donde vas a encontrar todo lo que necesitan..*
@@ -22,7 +22,7 @@ Sus integrantes son:
 
 -Luciano Escobar: Hola! Me presento, Soy Luciano Escobar, tengo 32 años. 
 
-------------
+-------------
 
 ### **Paginas en las que nos inspiramos:**
 
