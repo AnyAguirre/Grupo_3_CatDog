@@ -12,7 +12,7 @@ Apuntamos al público dueño de una mascota brindándoles una forma de comprar s
 #### **¿Quiénes somos?**
 *CatDog es un emprendimiento joven conformado por 4 compañeros, como amamos a nuestras mascotas como vos, y los cuidamos con el mismo cariño y amor que nos cuidamos nosotros mismos. Nos apasiona ver que sean felices, estén saludables y que no les falte nada, por eso creamos CatDog donde vas a encontrar todo lo que necesitan..*
 
-Sus integrantes son:
+## Sus integrantes son:
 
 -Angee Vilchez: soy angee tengo 25 años hace un tiempo me empecé a interesar por el mundo de la programación y mediante youtube pude ir aprendiendo algo, actualmente estoy haciendo un curso full stack con el equipo Formar para en un futuro cercano trabajar de esto.
 
@@ -20,9 +20,9 @@ Sus integrantes son:
 
 -Analia Aguirre: Hola! Soy Analia, tengo 26 años, soy Tecnica en Informatica, me encanta la informática, desde los 13 años que comencé a usar una computadora siempre investigue para ir más allá para saber y entender un poco más que pasaba detrás de esa pantalla, por eso cuando descubrí la programación fue mi pasión y de lo que nunca me canso de aprender. Actualmente cursando el curso de FullStack de Digital-House gracias a la oportunidad de la fundación Formar .
 
--Luciano Escobar: Hola! Me presento, Soy Luciano Escobar, tengo 32 años. 
+-Luciano Escobar: Hola! Me presento, Soy Luciano Escobar, tengo 32 años. Tuve una idea de crear alguna vez una app, para celulares y comencé a descubrir el mundo de la programación, hice un curso de scrach para niños y me gusto. 
 
--------------
+--------------------------------------------
 
 ### **Paginas en las que nos inspiramos:**
 
