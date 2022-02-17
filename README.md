@@ -26,11 +26,14 @@ Sus integrantes son:
 
 ### **Paginas en las que nos inspiramos:**
 
-http://petmania.com/ 
-https://mispichos.com/  (Home)
+(Home)
+http://petmania.com
+https://mispichos.com  
 
+(Detalle del producto)
 https://www.puppis.com.ar  
-https://www.catycan.com   (Detalle del producto)
+https://www.catycan.com   
 
-https://www.timoteopetshop.com (Carrito de compras)
+(Carrito de compras)
+https://www.timoteopetshop.com 
 
