@@ -20,7 +20,7 @@ Apuntamos al público dueño de una mascota brindándoles una forma de comprar s
 
 -Analia Aguirre: Hola! Soy Analia, tengo 26 años, soy Tecnica en Informatica, me encanta la informática, desde los 13 años que comencé a usar una computadora siempre investigue para ir más allá para saber y entender un poco más que pasaba detrás de esa pantalla, por eso cuando descubrí la programación fue mi pasión y de lo que nunca me canso de aprender. Actualmente cursando el curso de FullStack de Digital-House gracias a la oportunidad de la fundación Formar .
 
--Luciano Escobar: Hola! Me presento, Soy Luciano Escobar, tengo 32 años. Tuve una idea de crear alguna vez una app, para celulares y comencé a descubrir el mundo de la programación, hice un curso de scrach para niños y me gusto. 
+-Luciano Escobar: Hola! Me presento, Soy Luciano Escobar, tengo 32 años. Tuve una idea de crear alguna vez una app, para celulares y comencé a descubrir el mundo de la programación, hice un curso de scrach para niños y me gusto. Hoy tengo la suerte estar aprendiendo junto a mis compañeros, a los profes y Ailu,  además ella  me ayudó a seguir esforzandome, formar aparte de formar profesionales te acompañan en el proceso, académico y humano.
 
 --------------------------------------------
 
@@ -43,6 +43,9 @@ https://www.catycan.com
 (Carrito de compras)
 
 https://www.timoteopetshop.com 
+
+(Login y registro)
+https://okhosting.com/blog/los-datos-en-una-tienda-on-line/
 
 ### **Tablero de Trabajo**
 Url Trello: https://trello.com/b/jGI8j2d1/grupo3c13
