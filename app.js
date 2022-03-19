@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/views/index.html'))
 })
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/views/carritodecompras'))
+    res.sendFile(path.join(__dirname, '/public/views/carritodecompras.html'))
 })
 
 app.listen(PORT, () => console.log(`
