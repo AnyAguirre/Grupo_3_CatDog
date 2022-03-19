@@ -1,0 +1,22 @@
+{
+  "name": "grupo_3_catdog",
+  "version": "1.0.0",
+  "description": "------------",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnyAguirre/Grupo_3_CatDog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnyAguirre/Grupo_3_CatDog/issues"
+  },
+  "homepage": "https://github.com/AnyAguirre/Grupo_3_CatDog#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
