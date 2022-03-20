@@ -1,3 +1,12 @@
+:root {
+  --azul-oscuro: #041562;
+  --azul-claro: #524F9E;
+  --celeste-claro: #1AAFD0;
+  --rojo: #da1212;
+  --font-roboto: "Roboto", sans-serif;
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -157,6 +166,8 @@ hr {
     flex-direction: column;
     justify-content: center;
     background-color: white;
+    
+    
 }
 
 .contenedor1 img {
@@ -174,6 +185,7 @@ hr {
     width: 50px;
     height: 150px;
     background-color: white;
+    
 }
 
 .cuenta{
@@ -181,6 +193,7 @@ hr {
     flex-direction: column;
     width: 100%;
     margin-bottom: 1rem;
+    background-color: powderblue;
 }
 
 

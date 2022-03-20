@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/views/index.html'))
 })
-app.get('/', (req, res) => {
+app.get('/carrito', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/views/carritodecompras.html'))
 })
 
