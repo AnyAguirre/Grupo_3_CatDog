@@ -1,0 +1,199 @@
+.imagenes {
+    height: 100%;
+    width: 0.2rem;
+    margin-left: 0;
+    margin-top: 6rem;
+}
+
+.imagen-2 {
+    height: 160px;
+    width: 160px;
+    margin-left: 4rem;
+    position: relative;
+    top: 1rem;
+}
+ .imagen-3 {
+    height: 160px;
+    width: 160px;
+    margin-left: 12.5rem;
+    position: relative;
+    top: -9.5rem;
+}
+
+.Nombre_producto {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: -45.5rem;
+    margin-left: 27rem;
+    font-size: 25px;
+    color: black;
+}
+
+.Cod_Producto {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: -44.5rem;
+    margin-left: 27rem;
+    font-size: 20px;
+    color: black;
+}
+
+.producto_reseña_estrellas {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: -42.5rem;
+    margin-left: 27rem;
+    font-size: 20px;
+    color: black;
+    display: inline-block;
+}
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+  div .precio {
+      position: relative;
+      top: -0.5rem;
+  }
+  .columna_derecha_pb {
+    height: 160px;
+    width: 350px;
+    margin-left: 70rem;
+    position: relative;
+    top: -50rem;
+    font-size: 20px;
+  }
+
+  .columna_derecha_pb .etiqueta_atributo {
+    margin-left: 1rem;
+    font-size: 10px;
+ }
+
+ .columna_derecha_pb .control_de_forma1 {
+     margin-left: 4rem;
+     width: 220px;
+ }
+
+ .columna_derecha_pb .etiqueta_atributo2 {
+    margin-left: 1rem;
+    font-size: 10px;
+ }
+
+ .columna_derecha_pb .control_de_forma2 {
+    margin-left: 4rem;
+    width: 220px;
+}
+
+.columna_derecha_pb .etiqueta_atributo3 {
+    margin-left: 1rem;
+    font-size: 10px;
+ }
+
+ .columna_derecha_pb .control_de_forma3 {
+    margin-left: 4rem;
+    width: 220px;
+}
+
+div .fondo_carro_de_caja {
+    height: 160px;
+    width: 350px;
+    margin-left: 77.6rem;
+    position: relative;
+    top: -45rem;
+}
+
+div .cantidad {
+    height: 160px;
+    width: 350px;
+    margin-left: 72.5rem;
+    position: relative;
+    top: -51rem;
+}
+
+div .caja_de_seguridad {
+    height: 160px;
+    width: 350px;
+    margin-left: 74rem;
+    position: relative;
+    top: -57rem;
+}
+
+section .pagina-de-producto-encabezado {
+    position: relative;
+    top: -50rem;
+    color: black;
+}
+
+section .pagina-de-producto-encabezado2 {
+    position: relative;
+    top: -51.3rem;
+    margin-left: 7.5rem;
+    color: black;
+}
+
+section .Descripcion {
+    position: relative;
+    top: -49rem;
+    color: black;
+}
+
+div .Envios {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: -38rem;
+    margin-left: 27rem;
+    font-size: 25px;
+    color: black;
+}
+
+div .item_barra_carga {
+    width: 100%;
+    padding: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    background: #6fc597;
+    width: 1rem;
+}
+/* .Cantidad_total {
+    margin-left: 6rem;
+} */
