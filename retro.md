@@ -1,4 +1,4 @@
-### Retrospectiva del Sprint 1:
+> **Retrospectiva del Sprint 1:**
 
 
 Para esta retrospectiva nos basamos en la dinámica de estrella de mar , los tres integrantes del grupo debatimos como fue nuestra interaccion como equipo,
