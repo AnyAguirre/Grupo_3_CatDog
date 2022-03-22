@@ -5,13 +5,12 @@ Para esta retrospectiva nos basamos en la dinámica de estrella de mar , los tre
 que cosas queremos seguir implementando, cuales mejorar y cuales dejar de hacer para realizar un mejor proyecto.
 
 | Seguir haciendo   |
-
-Seguir haciendo la entrega a tiempo
-Distribución de tareas
-Seguir con las daily
-Continuar el orden de archivos y carpetas/ pedidos
-Predisposición a cumplir con el trabajo
-Compañerismo
+*Seguir haciendo la entrega a tiempo
+*Distribución de tareas
+*Seguir con las daily
+*Continuar el orden de archivos y carpetas/ pedidos
+*Predisposición a cumplir con el trabajo
+*Compañerismo
 
 | Hacer mas|
 Mantener actualizado trello
