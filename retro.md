@@ -20,7 +20,7 @@ que cosas queremos seguir implementando, cuales mejorar y cuales dejar de hacer 
 ### **Empezar a hacer**
 * Cumplir vencimientos de trello.
 * Hacer las tres preguntas en las daily.
-* Practicar HTML y CCS.
+* Practicar HTML y CSS.
 * Comunicar dificultades.
 * Practicar github.
 * Ser mas descriptivos en los commits.
