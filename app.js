@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/views/index.html'))
 })
 app.get('/carrito', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/views/carritodecompras.html'))
+    res.sendFile(path.join(__dirname, '/public/views/productCart.html'))
 })
 app.get('/productdetail', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/views/productdetail.html'))
@@ -17,6 +17,11 @@ app.get('/productdetail', (req, res) => {
 app.get('/registro', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/views/register.html'))
 })
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/views/login.html'))
+})
+
+
 
 app.listen(PORT, () => console.log(`
 Servidor escuchando en el puerto ${PORT}
