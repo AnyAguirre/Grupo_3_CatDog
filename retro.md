@@ -5,7 +5,7 @@ Para esta retrospectiva nos basamos en la dinámica de estrella de mar , los tre
 que cosas queremos seguir implementando, cuales mejorar y cuales dejar de hacer para realizar un mejor proyecto.
 
 | Seguir haciendo   |
-| -------------------- |
+
 Seguir haciendo la entrega a tiempo
 Distribución de tareas
 Seguir con las daily
