@@ -14,6 +14,9 @@ app.get('/carrito', (req, res) => {
 app.get('/productdetail', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/views/productdetail.html'))
 })
+app.get('/registro', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/views/register.html'))
+})
 
 app.listen(PORT, () => console.log(`
 Servidor escuchando en el puerto ${PORT}
