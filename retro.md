@@ -7,7 +7,7 @@ que cosas queremos seguir implementando, cuales mejorar y cuales dejar de hacer 
 ### **Seguir haciendo**
 
 *Seguir haciendo la entrega a tiempo
-Distribución de tareas
+*Distribución de tareas
 Seguir con las daily
 Continuar el orden de archivos y carpetas/ pedidos
 Predisposición a cumplir con el trabajo
