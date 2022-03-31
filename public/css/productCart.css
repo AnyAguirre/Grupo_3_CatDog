@@ -185,6 +185,7 @@ hr {
     width: 50px;
     height: 150px;
     background-color: white;
+    position: relative;
     
 }
 
@@ -194,6 +195,7 @@ hr {
     width: 100%;
     margin-bottom: 1rem;
     background-color: powderblue;
+    position: relative;
 }
 
 
