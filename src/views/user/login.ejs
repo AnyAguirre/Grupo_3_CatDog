@@ -1,54 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../css/login.css">
-    
-    <script src="https://kit.fontawesome.com/5f1547b5eb.js" crossorigin="anonymous"></script>
-</head>
-<body>
 
-    <header>
-        <div>
-            <div class="section-top">
-               <img src="/img/LogoNombre.png" alt="LogoCatDog">
-                
-               <div class="conteiner-buscador">
-                <input type="search" name="barra-de-busqueda" id="buscador" placeholder="Buscar">
-                <i id="lupa" class="fas fa-search"></i>
-                </div>
-                
-                <div class="burger-menu">
-                <i class="fas fa-bars"></i>
-                </div>
+<%- include("./partials/head") %>
+
+    <body>
+
+        <%- include("./partials/header") %>
         
-                <div class="section-bottom">
-                <ul class="usuario">
-                <li><a href="">Creá tu cuenta </a></li>
-                <li><a href="">Ingresá <i class="fa-solid fa-house-user"></i></a></li>
-                <li><a href="">Carrito <i class="fa-solid fa-bag-shopping"></i></a></li>
-                </ul> 
-                </div>   
-            
-            </div>
-        </div>
-        <div>
-            <nav id="nav">
-                 <ul class="opciones">
-                     <li><a href="">Perros</a></li>
-                     <li><a href="">Gatos</a></li>
-                     <li><a href="">Otros</a></li>
-                     <li><a href="">Accesorios</a></li>
-                     <li><a href="">Servicios</a></li>
-                 </ul>
-        </div>
-                 
-            </nav>
-    </header>
-
     <main>
         <section class="container">
             <hr>
@@ -75,60 +33,10 @@
         </section>
     </main> 
 
+    <%- include("./partials/footer") %>
 
-    <footer>
-    
-        <div class="contenedor-footer info" >
-            <article class="uno">
-                <p><a href="">Quienes somos</a></p>
-            </article>
-            <article  class="uno">
-                <p><a href="">Terminos y condiciones</a></p>
-            </article>
-        </div>
-        
-        <div class="contenedor-footer info2">
-            <article>
-                <p><a href="">¿Dudas?</a></p>
-                <p><a href="">¿Como comprar?</a></p>
-                <p><a href="">Cambios y devoluciones</a></p>
-                <p><a href="">Forma de pago</a></p>
-                <p><a href="">Zonas de entrega</a></p>
-            </article>
-        </div>
-        
-        <div class="contenedor-footer">
-            <article class="footer_socialMedia-container">
-                <div class="footer_socialMedia-icon">
-                    <a href="https://www.instagram.com/fundacionformar/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-                
-                <div class="footer_socialMedia-icon">
-                    <a href="https://www.facebook.com/Fundacion-Formar-269783010205963/" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </div>
-               
-                <div class="footer_socialMedia-icon">
-                    <a href="https://www.linkedin.com/in/fundacion-formar-371034198/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-                
-                <div class="footer_socialMedia-icon">
-                    <a href="">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </div>
-            </article>
-        </div>
-    
-    </footer>
-
-
-
-
+    <%- include("./partials/script") %>
 </body>
+
 </html>
+
