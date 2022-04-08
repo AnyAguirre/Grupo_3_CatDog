@@ -1,166 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de compras</title>
-    
-<link rel="stylesheet" href="../css/productCart.css">
 
-<script src="https://kit.fontawesome.com/5f1547b5eb.js" crossorigin="anonymous"></script>
+<%- include("./partials/head") %>
 
-</head>
-<body>
-    <header>
-        <div>
-            <div class="section-top">
-               <img src="../img/LogoNombre.png" alt="LogoCatDog">
-                
-               <div class="conteiner-buscador">
-                <input type="search" name="barra-de-busqueda" id="buscador" placeholder="Buscar">
-                <i id="lupa" class="fas fa-search"></i>
-                </div>
-                
-                <div class="burger-menu">
-                <i class="fas fa-bars"></i>
-                </div>
-        
-                <div class="section-bottom">
-                <ul class="usuario">
-                <li><a href="">Creá tu cuenta </a></li>
-                <li><a href="">Ingresá <i class="fa-solid fa-house-user"></i></a></li>
-                <li><a href="">Carrito <i class="fa-solid fa-bag-shopping"></i></a></li>
-                </ul> 
-                </div>   
-            
-            </div>
-        </div>
-        <div>
-            <nav id="nav">
-                 <ul class="opciones">
-                     <li><a href="">Perros</a></li>
-                     <li><a href="">Gatos</a></li>
-                     <li><a href="">Otros</a></li>
-                     <li><a href="">Accesorios</a></li>
-                     <li><a href="">Servicios</a></li>
-                 </ul>
-        </div>
-                 
-            </nav>
-        </header>
+    <body>
 
+        <%- include("./partials/header") %>
 
-        <main>
-            <form action="" method=""></form>
-        <div class="carrito-title">   
+        <main class="main">
             <h2>Carrito De Compras</h2>
             <hr>
             
-            <div class="contenedor1">
-                <img width="175px" src="../img/carrito1.png" alt="">
-                <span><strong>Royal Canin Mini Puppy  x 10kg </strong></span>
-                <span>x 10 unidades</span>
-                    <div class="botones-cantidad">
-                        <button type="submit" class="product-quantity--button_minus">-</button>
-                        <span id="product-quantity-mp" data-name="cantidad_producto_span" class="product-quantity--input">1</span>
-                        <button type="button" class="product-quantity--button_plus">+</button>
-                        <span class="price" style="right:0">$2350</span>
-                    </div>
-                    <div class="botones-carrito">
-                        <button type="reset">Eliminar</button>
-                    </div>
-            </div>
-            
-            <div class="contenedor1">
-                <img width="175px" src="../img/carrito2.png" alt="">
-                <span><strong>Purina Excellent Puppy Medium/Large Breed   x 20kg + 2kg</strong></span>
-                    <div class="botones-cantidad">
-                        <button type="button" class="product-quantity--button_minus">-</button>
-                        <span id="product-quantity-mp" data-name="cantidad_producto_span" class="product-quantity--input">1</span>
-                        <button type="button" class="product-quantity--button_plus">+</button>
-                        <span class="price" style="right:0">$8265</span>
-                    </div>
-                    <div class="botones-carrito">
-                        <button type="reset">Eliminar</button>
-                    </div>
-            </div>
-        </div> 
-        <hr> 
-        
-        <h4>Codígo Postal</h4>
-        <article class="codigopostal">
-              
-             <input type="codigo postal" class="input-style" name="codigo" placeholder="Tu codigo postal">
-             <button type="submit" class="btn btn-submit">CALCULAR</button>
-            </article>
-
-           <hr>
-           <div class="cuenta">
-                <p class="summary-label">Subtotal $10.615</p>                                                                                                         
-                <p class="summary-label">Envio $500</p>                                                                                                         
-                <p class="summary-label">Total $11.115</p>    
-                <div class="boton-final">
-                <button type="submit">COMPRAR</button>
-                </div>                                                                                                     
-            </div>
-            
+            <div class="main_producto">
+                <div class="main_boton_eliminar">
+                    <button type="reset">Eliminar</button>
+                    <button>
+                        <i class="fa-solid fa-ellipsis-vertical"></i> 
+                    </button>
+                </div>
             <hr>
-
-        </main> 
-
-
-        <footer>
+                
+                <div class="main_foto">
+                    <a href="">
+                    <img width="150px" src="../img/carrito1.png" alt="">
+                    </a>
+                </div>
     
-            <div class="contenedor-footer info" >
-                <article class="uno">
-                    <p><a href="">Quienes somos</a></p>
-                </article>
-                <article  class="uno">
-                    <p><a href="">Terminos y condiciones</a></p>
-                </article>
+                <div class="main_detalle">
+                    <strong>Royal Canin Mini Puppy  x 10kg </strong>
+                    <p><a href="">x 10 unidades</a></p>
+                </div>
+    
+                <div class="main_boton_cantidad">
+                    <button type="button" class="">-</button>
+                    <span id="">1</span>
+                    <button type="button" class="">+</button>
+                </div>
+                <ul>
+                    <p><a href="">$2350</a></p>
+                </ul>
             </div>
-            
-            <div class="contenedor-footer info2">
-                <article>
-                    <p><a href="">¿Dudas?</a></p>
-                    <p><a href="">¿Como comprar?</a></p>
-                    <p><a href="">Cambios y devoluciones</a></p>
-                    <p><a href="">Forma de pago</a></p>
-                    <p><a href="">Zonas de entrega</a></p>
-                </article>
-            </div>
-            
-            <div class="contenedor-footer">
-                <article class="footer_socialMedia-container">
-                    <div class="footer_socialMedia-icon">
-                        <a href="https://www.instagram.com/fundacionformar/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="footer_socialMedia-icon">
-                        <a href="https://www.facebook.com/Fundacion-Formar-269783010205963/" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </div>
-                   
-                    <div class="footer_socialMedia-icon">
-                        <a href="https://www.linkedin.com/in/fundacion-formar-371034198/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="footer_socialMedia-icon">
-                        <a href="">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-       
-        </footer>
-
+            <hr>
         
-</body>
+            
+            <div class="main_producto">
+                <div class="main_boton_eliminar">
+                    <button type="reset">Eliminar</button>
+                    <button>
+                        <i class="fa-solid fa-ellipsis-vertical"></i> 
+                    </button>
+                </div>
+                
+                <div class="main_foto">
+                    <a href="">
+                    <img width="150px" src="../img/carrito2.png" alt="">
+                    </a>
+                </div>
+    
+                <div class="main_detalle">
+                    <strong>Purina Excellent Puppy Medium/Large Breed</strong>
+                    <p><a href="">x 20kg + 2kg</a></p>
+                </div>
+    
+                <div class="boton_cantidad">
+                    <button type="button" class="">-</button>
+                    <span id="">1</span>
+                    <button type="button" class="">+</button>
+                </div>
+                <ul>
+                    <p><a href="">$8265</a></p>
+                </ul>
+            </div>
+             
+            <div class="main_producto">
+                <div class="main_boton-eliminar">
+                    <button type="reset">Eliminar</button>
+                    <button>
+                        <i class="fa-solid fa-ellipsis-vertical"></i> 
+                    </button>
+                </div>
+                
+                <div class="main_foto">
+                    <a href="">
+                    <img width="150px" src="../img/carrito3.png" alt="">
+                    </a>
+                </div>
+    
+                <div class="main_detalle">
+                    <strong>Pro Plan Adult Cat</strong>
+                    <p><a href="">x 3 kgs</a></p>
+                </div>
+    
+                <div class="main_boton_cantidad">
+                    <button type="button" class="">-</button>
+                    <span id="">1</span>
+                    <button type="button" class="">+</button>
+                </div>
+                <ul>
+                    <p><a href="">$3749</a></p>
+                </ul>
+            </div>
+             
+            <div class="main_códigoPostal">
+                <label for="">Código:</label> 
+                <input type="text" class="input-text" placeholder="Código Postal"> 
+                <button type="submit" class="button" >Calcular</button>
+            </div>
+    
+            <div class="main_total">
+                <h2>Total del carrito</h2>
+            
+                <table cellspacing="0" class="">
+                    <table contenteditable="" class=" ">
+                    </table>
+            
+                    <tbody>
+                        <tr class="main_subtotal">
+                        <th>Subtotal</th>
+                        <td data-title="Subtotal"><span class=""><bdi><span class="">$</span>14,364.00
+                        </bdi></span></td>
+                        </tr>
+                        <table></table>
+                        
+                        <tr class="main_envio">
+                        <th>Envio</th>
+                        <td ><span class=""><bdi><span class="">$</span>500.00
+                        </bdi></span></td>
+                        </tr>
+                        <table></table>
+                    
+                        <tr class="main_total">
+                        <th>Total</th>
+                        <td data-title="Total"><strong><span class=""><bdi><span class="">$</span>14,864.00
+                        </bdi></span></strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <div class="main_boton_finalizar">
+                <a href="" class="">Finalizar compra</a>
+                </div>
+            
+            </div>
+    
+     
+          </main>
+
+
+            <%- include("./partials/footer") %>
+
+            <%- include("./partials/script") %>
+    </body>
+
 </html>
