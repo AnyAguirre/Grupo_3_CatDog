@@ -10,6 +10,7 @@ body {
   background-color: var(--blanco);
   color: var(--azul-oscuro);
   font-family: var(--font-roboto);
+  background: linear-gradient(to bottom, --azul-claro, white)
 }
 
 * {
@@ -43,7 +44,6 @@ ul {
 }
 
 .burger-menu i {
-  background-color: var(--color-celeste);
   border-radius: 5px; 
   color: white; 
   padding: 11px 13px; 
@@ -67,6 +67,7 @@ padding: 0;
 display: inline;
 border-radius: 500px;
 }
+
 .conteiner-buscador {
 position: relative;
 
@@ -103,6 +104,12 @@ header #lupa{
 #nav.opciones {
   display: flex;
   justify-content: space-between;
+}
+
+.opciones a:hover{
+  color: white;
+ border-radius: 15px;
+ border: black;
 }
 
 .usuario {
