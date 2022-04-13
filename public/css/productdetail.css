@@ -321,4 +321,11 @@ div .dato_carga_de_barra .Cantidad-total {
     margin-left: 6rem;
 } */
 
-
+@media  (min-width: 412px){
+  
+    header nav ul li{
+        font-size: 35px;
+     margin-right: 15px; 
+      
+    }
+} 
