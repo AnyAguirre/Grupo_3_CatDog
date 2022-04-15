@@ -104,17 +104,18 @@
   .precio {
       position: relative;
       top: -68rem;
-      margin-left: 79rem;
+      margin-left: 90rem;
       font-size: 30px;
       color: black;
       z-index: 10;
   }
 
   .conjunto_campo_atributo {
-    margin-left: 70rem;
+    margin-left: 78.5rem;
     position: relative;
     top: -71rem;
     background-color: white;
+    
   }
 
   .columna_derecha_pb .etiqueta_atributo {
@@ -162,7 +163,7 @@
 div .fondo_carro_de_caja .exclusivo{
     height: 80px;
     width: 250px;
-    margin-left: 75rem;
+    margin-left: 85.5rem;
     position: relative;
     top: -108rem;
     font-size: 20px;
@@ -172,7 +173,7 @@ div .fondo_carro_de_caja .exclusivo{
 div .cantidad {
     height: 160px;
     width: 350px;
-    margin-left: 75rem;
+    margin-left: 85.5rem;
     position: relative;
     top: -102rem;
     font-size: 15px;
@@ -181,7 +182,7 @@ div .cantidad {
 #metodo_de_pago_logo {
     height: 160px;
     width: 350px;
-    margin-left: 76rem;
+    margin-left: 87rem;
     position: relative;
     top: -104rem;
 }
@@ -324,7 +325,7 @@ div .dato_carga_de_barra .Cantidad-total {
 
 /* Media Queries */
 
-@media  screen and (min-width: 480px){
+@media  screen and (max-width: 500px){
     
     /* HEADER */
 
@@ -374,7 +375,7 @@ div .dato_carga_de_barra .Cantidad-total {
 
       /* PRODUCT DETAIL */
 
-      .imagenes {
+       .imagenes {
         height: 100%;
         width: 0.2rem;
         margin-left: 0;
@@ -400,12 +401,19 @@ div .dato_carga_de_barra .Cantidad-total {
         width: auto;
         height: auto;
         position: relative;
-        top: -20rem;
+        top: -7.5rem;
         margin-left: 1rem;
         font-size: 25px;
         color: black;
+} 
+
+.Cod_Producto {
+    margin-left: 1rem;
+    position: relative;
+    top: -6rem;
 }
-    }
+
+    } 
 
       /* END PRODUCT DETAIL */
 
