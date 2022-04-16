@@ -1,56 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <%- include("../partials/head") %>
+    <%- include("../partials/header") %> 
 
 <body>
 
-    <%- include("../partials/header") %>
+    <%- include("../partials/head") %>
 
     <main>
         <!-- header -->
     <div class="Producto">
     <div id="pagina">
-        <div class="header-container">
-            <header>
-                <div>
-                    <div class="section-top">
-                    <img src="../img/LogoNombre.png" alt="LogoCatDog">
-             <div class="conteiner-buscador">
-                    <input type="search" name="barra-de-busqueda" id="buscador" placeholder="Buscar">
-                    <i id="lupa" class="fas fa-search"></i>
-                </div>
-                    <div class="burger-menu">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                
-                    <div class="section-bottom">
-                    <ul class="usuario">
-                        <li><a href="">Creá tu cuenta </a></li>
-                        <li><a href="">Ingresá <i class="fa-solid fa-house-user"></i></a></li>
-                        <li><a href="">Carrito <i class="fa-solid fa-bag-shopping"></i></a></li>
-                    </ul> 
-                    </div>
-                </div>
-                </div>
-                <div>
-                    <nav id="nav">
-                         <ul class="opciones">
-                             <li><a href="">Perros</a></li>
-                             <li><a href="">Gatos</a></li>
-                             <li><a href="">Otros</a></li>
-                             <li><a href="">Accesorios</a></li>
-                             <li><a href="">Servicios</a></li>
-                         </ul>
-                        </div>
-                    </nav>
-                </header>
-        </div>
-
-        <!-- Fin Header -->
-
-        
-        
             <!-- Informacion Centro -->
             <div class="columna_centro_pb col-xs-12 col-sm-4">
                 <!-- Imagen Pagina -->
@@ -94,11 +55,13 @@
                     <div class="item">
                         <div class="icon">
                             <div class="icono_radio_activo" style="display: none;"></div>
-                            <div class="icn camion"></div>
+                            <div class="icono-camion">
+                                <img src="../img/icono-camion.png" alt="icono-camion">
+                            </div>
                         </div>
                         <div class="text">
-                            <div class="titulo">ENVIO A DOMICILIO</div>
-                            <div class="texto">Envio gratis +$3000 en CABA y zonas de GBA.
+                            <div class="titulo_domicilio">ENVIO A DOMICILIO</div>
+                            <div class="texto-1">Envio gratis +$3000 en CABA y zonas de GBA.
                                 <p>
                                     No aplica para Envios al interior
                                 </p>
@@ -113,23 +76,20 @@
                                 </div>
                             </div>
                             <div class="barra-de-carga">
-                                <div class="barra_de_carga">
-                                    <div class="item_barra_carga"></div>
+                                <div id="miProgreso">
+                                    <div id="barra_de_carga"></div>
                                 </div>
                                 <div class="dato_carga_de_barra">
-                                    <span class="Canidad-inicial">$0</span>
+                                    <span class="Cantidad-inicial">$0</span>
                                     <span class="Cantidad-total">$3000</span>
                                 </div>
                             </div>
                         </div>
-                      <div class="Envio-flash">
-                          <div class="texto">Envios a todo CABA y GBA Norte.
-                              Comprando entre las
-                              <br>9 am y las 8 pm, recibis tu pedido en menos de 3 horas</br>
-                          </div>
+                      <div class="titulo_sucursal">Retiro en Sucursal</div>
+                      <div class="texto_3">Retira sin cargo por tu sucursal preferida</div>
+                      <div class="icono-sucursal">
+                          <img src="../img/icono-sucursal.png" alt="sucursal">
                       </div>
-                      <div class="titulo">Retiro en Sucursal</div>
-                      <div class="texto">Retira sin cargo por tu sucursal preferida</div>
                       <div class="sucursales">
                           <a href="#">Ver sucursales</a>
                       </div>
@@ -149,7 +109,7 @@
                 </div>
             <!-- end Precio Columna Derecha -->
 
-                <fieldset class="conjunto_campo_atributo">
+                <fieldset class="conjunto_campo_atributo" style="height: 65rem; width: 30rem;">
                     <label class="etiqueta_atributo">EDAD</label>
                     <div class="lista_atributo">
                         <div class="seleccion" id="grupo_1_uniforme">
@@ -160,8 +120,8 @@
                                 <option value="4" title="">4AÑO</option>
                             </select>
                         </div>
-                        <fieldset class="conjunto_campo_atributo3">
-                            <label class="etiqueta_atributo2" for="grupo_3">RAZA;</label>
+                        <div class="conjunto_campo_atributo3">
+                            <label class="etiqueta_atributo2" for="grupo_3">RAZA</label>
                             <div class="lista_atributo">
                                 <div class="seleccion2" id="grupo_3_uniforme">
                                     <select name="grupo_3" id="grupo_3" class="control_de_forma2">
@@ -169,8 +129,8 @@
                                     </select>
                                 </div>
                             </div>
-                        </fieldset>
-                        <fieldset class="conjunto_campo_atributo5">
+                        </div>
+                        <div class="conjunto_campo_atributo5">
                             <label class="etiqueta_atributo3" for="grupo_5">TAMAÑO</label>
                             <div class="lista_atributo">
                                 <div class="seleccion3" id="grupo_5_uniforme">
@@ -179,7 +139,7 @@
                                     </select>
                                 </div>
                             </div>
-                        </fieldset>
+                        </div>
                     </div>
                 </fieldset>
             </div>
@@ -213,7 +173,6 @@
                 <!-- metodo de pago -->
                 <div id="metodo_de_pago_logo">
                     <div class="caja_de_seguridad">
-                        <h5 class="product-heading-h5"></h5>
                         <a href="" title="metodo_pago">
                             <img src="../img/img-metodo_de_pago.png" alt="" class="img-sensible">
                         </a>
@@ -222,57 +181,12 @@
         <section class="página-de-descripción-del-producto">
             <h3 class="pagina-de-producto-encabezado">descripción</h3>
             <h3 class="pagina-de-producto-encabezado2">opciones</h3>
-            <div class="Descripcion"> Purina Pro Plan provee nutrición de avanzada que ayuda a los perros de razas medianas a mantenerse fuertes y llenos de vitalidad. 
-                                A su vez, también ayuda a otras cosas claves en el cuidado de la mascota, tales como reforzar el sistema inmune, fortalecer la microflora intestinal y reforzar la barrera cutánea. 
-                                Esta fórmula ofrece, a través de sus sabrosas croquetas, un contenido rico en proteínas (26%) y grasas (15%), utilizando como ingrediente principal carne fresca de pollo, que ayuda a los perros a mantener la masa corporal magra y músculos fuertes.</div>
         </section>
-
-        <!-- Footer -->
-        <footer>
-            <div class="contenedor-footer info" >
-                <article class="uno">
-                    <p><a href="">Quienes somos</a></p>
-                </article>
-                <article  class="uno">
-                    <p><a href="">Terminos y condiciones</a></p>
-                </article>
-            </div>
-            <div class="contenedor-footer info2">
-                <article>
-                    <p><a href="">¿Dudas?</a></p>
-                    <p><a href="">¿Como comprar?</a></p>
-                    <p><a href="">Cambios y devoluciones</a></p>
-                    <p><a href="">Forma de pago</a></p>
-                    <p><a href="">Zonas de entrega</a></p>
-                </article>
-            </div>
-            <div class="contenedor-footer">
-                <article class="footer_socialMedia-container">
-                    <div class="footer_socialMedia-icon">
-                        <a href="" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                    <div class="footer_socialMedia-icon">
-                        <a href="" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </div>
-                    <div class="footer_socialMedia-icon">
-                        <a href="" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </div>
-                    <div class="footer_socialMedia-icon">
-                        <a href="">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </footer>
+        <div class="Descripcion"> Purina Pro Plan provee nutrición de avanzada que ayuda a los perros de razas medianas a mantenerse fuertes y llenos de vitalidad. 
+            A su vez, también ayuda a otras cosas claves en el cuidado de la mascota, tales como reforzar el sistema inmune, fortalecer la microflora intestinal y reforzar la barrera cutánea. 
+            Esta fórmula ofrece, a través de sus sabrosas croquetas, un contenido rico en proteínas (26%) y grasas (15%), utilizando como ingrediente principal carne fresca de pollo, que ayuda a los perros a mantener la masa corporal magra y músculos fuertes.
         </div>
-        <!-- end footer -->
+        </div>
     </div>
 
     </main>
