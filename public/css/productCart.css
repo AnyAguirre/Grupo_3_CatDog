@@ -21,9 +21,19 @@ body::-webkit-scrollbar {
 
 h2 {
   font-size: 1.5rem;
+  background-color: darkorange;
+}
+h2 {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  border-radius: 1rem;
 }
 
-.main_producto img{
+.main_producto {
   width: 12rem;
     height: 12rem;
     display: flex;
@@ -33,16 +43,10 @@ h2 {
     border: 1px solid #e6e6e6
 }
 
-h2 {
-  display: flex;
-  width: 85%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  margin-left: 2rem;
-  border-radius: 1rem;
+.main_boton_eliminar{
+background-color: #01c167;
 }
+
 
 .main_foto{
   display: flex;
@@ -59,9 +63,6 @@ h2 {
   padding: 0.5rem;
   
 }
-
-
-
 .main_detalle{
   color: black;
   background-color: #524F9E;
@@ -83,4 +84,30 @@ hr {
 ul p{ 
   font-size: 1rem;
   font-weight: bold;
+  background-color: #01c167;
+}
+ 
+
+.main_códigoPostal{
+background-color: mediumpurple;
+}
+
+.main_totalCarrito{
+background-color: palevioletred;
+}
+
+.main_subtotal{
+
+}
+
+.main_envio{
+
+}
+
+.main_total{
+
+}
+
+.main_boton_finalizar{
+
 }
