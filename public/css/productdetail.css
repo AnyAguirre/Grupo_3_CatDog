@@ -57,7 +57,7 @@
     color: black;
     display: inline-block;
 }
-
+/* RESEÑA ESTRELLA */
 #form {
     width: 250px;
     margin: 0 auto;
@@ -79,6 +79,8 @@
   label {
     color: grey;
   }
+
+  /* CLASIFICACION */
   
   .clasificacion {
     direction: rtl;
@@ -405,15 +407,82 @@ div .dato_carga_de_barra .Cantidad-total {
         margin-left: 1rem;
         font-size: 25px;
         color: black;
-} 
+    } 
 
-.Cod_Producto {
+    .Cod_Producto {
     margin-left: 1rem;
     position: relative;
     top: -6rem;
-}
+    }
 
-    } 
+/* RESEÑA ESTRELLA */
+    #form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+    }
+  
+    #form p {
+    text-align: center;
+    }
+  
+    #form label {
+    font-size: 20px;
+    }
+  
+    input[type="radio"] {
+    display: none;
+    }
+  
+    label {
+    color: grey;
+    }
+
+  /* CLASIFICACION */
+  
+    .clasificacion {
+    margin-left: -6rem;
+    position: relative;
+    top: 40rem;
+    }
+  
+    label:hover,
+    label:hover ~ label {
+    color: orange;
+    }
+  
+    input[type="radio"]:checked ~ label {
+    color: orange;
+    }
+/* OPCIONES DE ENVIO */
+
+    div .Envios .Opciones_envios .titulo {
+        position: relative;
+        top: 1rem;
+        margin-left: 8.5rem;
+        font-size: 25px;
+        color: rgb(91, 205, 205);
+    }
+
+    div .Envios .titulo_domicilio {
+        position: relative;
+        top: -1rem;
+        margin-left: 9rem;
+        font-size: 18px;
+        color: black;
+        text-decoration: underline;
+    }
+    
+    .icono-camion img {
+        width: 90px;
+        height: 80px;
+        position: relative;
+        top: 4rem;
+        margin-left: 1rem;
+    }
+
+
+        } 
 
       /* END PRODUCT DETAIL */
 
