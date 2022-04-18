@@ -377,11 +377,11 @@ div .dato_carga_de_barra .Cantidad-total {
 
       /* PRODUCT DETAIL */
 
-       .imagenes {
+    .tamaño span {
         height: 100%;
         width: 0.2rem;
-        margin-left: 0;
-        margin-top: 6rem;
+        margin-left: 0rem;
+        top: 8rem;
     }
     
     .imagen-2 {
@@ -413,6 +413,17 @@ div .dato_carga_de_barra .Cantidad-total {
     margin-left: 1rem;
     position: relative;
     top: -6rem;
+    }
+
+    .producto_reseña_estrellas {
+        width: auto;
+        height: auto;
+        position: relative;
+        top: -45rem;
+        margin-left: 6.1rem;
+        font-size: 20px;
+        color: black;
+        display: inline-block;
     }
 
 /* RESEÑA ESTRELLA */
@@ -492,19 +503,21 @@ div .dato_carga_de_barra .Cantidad-total {
         top: -3rem;
     }
   
+    /* PRECIO */
+
     .precio {
         position: relative;
-        top: -68rem;
-        margin-left: 9rem;
+        top: 15rem;
+        margin-left: 12rem;
         font-size: 30px;
         color: black;
         z-index: 10;
     }
   
     .conjunto_campo_atributo {
-      margin-left: 78.5rem;
+      margin-left: 0.6rem;
       position: relative;
-      top: -71rem;
+      top: 12rem;
       background-color: white;
       
     }
@@ -554,9 +567,9 @@ div .dato_carga_de_barra .Cantidad-total {
   div .fondo_carro_de_caja .exclusivo{
       height: 80px;
       width: 250px;
-      margin-left: 85.5rem;
+      margin-left: 7.5rem;
       position: relative;
-      top: -108rem;
+      top: -25rem;
       font-size: 20px;
       background-color: gainsboro;
   }
@@ -564,38 +577,40 @@ div .dato_carga_de_barra .Cantidad-total {
   div .cantidad {
       height: 160px;
       width: 350px;
-      margin-left: 85.5rem;
+      margin-left: 8rem;
       position: relative;
-      top: -102rem;
+      top: -21rem;
       font-size: 15px;
   }
   
   #metodo_de_pago_logo {
       height: 160px;
       width: 350px;
-      margin-left: 87rem;
+      margin-left: 7.5rem;
       position: relative;
-      top: -104rem;
+      top: -23rem;
   }
   
   section .pagina-de-producto-encabezado {
       position: relative;
-      top: -96rem;
+      top: -4rem;
       color: black;
+      margin-left: -11rem;
   }
   
   section .pagina-de-producto-encabezado2 {
       position: relative;
-      top: -96rem;
-      margin-left: 1rem;
+      top: -4rem;
+      margin-left: -20rem;
       color: black;
   }
   
   div .Descripcion {
       position: relative;
-      top: -94rem;
+      top: -4rem;
       color: black;
-      margin-left: 10rem;
+      margin-left: 0.5rem;
+      font-size: 15px;
   }
   
   div .texto-1 {
@@ -643,8 +658,8 @@ div .dato_carga_de_barra .Cantidad-total {
   
   .titulo_sucursal {
       position: relative;
-      top: -37rem;
-      margin-left: 33rem;
+      top: 7.7rem;
+      margin-left: 10rem;
       font-size: 20px;
       text-decoration: underline;
       color: black;
@@ -654,21 +669,21 @@ div .dato_carga_de_barra .Cantidad-total {
       width: 80px;
       height: 50px;
       position: relative;
-      top: -40rem;
-      margin-left: 27rem;
+      top: 5.5rem;
+      margin-left: 3rem;
     }
   
     div .texto_3 {
       position: relative;
-      top: -36rem;
-      margin-left: 33rem;
+      top: 8.8rem;
+      margin-left: 10rem;
       font-size: 1.1rem;
     }
   
     .sucursales {
       position: relative;
-      top: -36rem;
-      margin-left: 33rem;
+      top: 6.6rem;
+      margin-left: 10rem;
       color: rgb(34, 239, 239);
     }
 
