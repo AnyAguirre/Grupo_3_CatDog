@@ -464,23 +464,213 @@ div .dato_carga_de_barra .Cantidad-total {
         color: rgb(91, 205, 205);
     }
 
+    /* TITULO DE ENVIO */
+
     div .Envios .titulo_domicilio {
         position: relative;
-        top: -1rem;
-        margin-left: 9rem;
+        top: -2rem;
+        margin-left: 10rem;
         font-size: 18px;
         color: black;
         text-decoration: underline;
     }
-    
+
+    /* ICONO DE CAMION DE ENVIOS */
+
     .icono-camion img {
         width: 90px;
         height: 80px;
         position: relative;
-        top: 4rem;
-        margin-left: 1rem;
+        top: 3rem;
+        margin-left: 3rem;
     }
 
+
+
+    .columna_derecha_pb  {
+        position: relative;
+        top: -3rem;
+    }
+  
+    .precio {
+        position: relative;
+        top: -68rem;
+        margin-left: 9rem;
+        font-size: 30px;
+        color: black;
+        z-index: 10;
+    }
+  
+    .conjunto_campo_atributo {
+      margin-left: 78.5rem;
+      position: relative;
+      top: -71rem;
+      background-color: white;
+      
+    }
+  
+    .columna_derecha_pb .etiqueta_atributo {
+      margin-left: 3rem;
+      font-size: 20px;
+      top: 5rem;
+      position: relative;
+   }
+  
+   .columna_derecha_pb .control_de_forma1 {
+       margin-left: 3rem;
+       width: 220px;
+       position: relative;
+       top: 6rem;
+   }
+  
+   .columna_derecha_pb .etiqueta_atributo2 {
+      margin-left: 3rem;
+      font-size: 20px;
+      position: relative;
+      top: 11rem;
+   }
+  
+   .columna_derecha_pb .control_de_forma2 {
+      margin-left: 3rem;
+      width: 220px;
+      top: 12rem;
+      position: relative;
+  }
+  
+  .columna_derecha_pb .etiqueta_atributo3 {
+      margin-left: 3rem;
+      font-size: 20px;
+      position: relative;
+       top: 17rem;
+   }
+  
+   .columna_derecha_pb .control_de_forma3 {
+      margin-left: 3rem;
+      width: 220px;
+      position: relative;
+      top: 18rem;
+  }
+  
+  div .fondo_carro_de_caja .exclusivo{
+      height: 80px;
+      width: 250px;
+      margin-left: 85.5rem;
+      position: relative;
+      top: -108rem;
+      font-size: 20px;
+      background-color: gainsboro;
+  }
+  
+  div .cantidad {
+      height: 160px;
+      width: 350px;
+      margin-left: 85.5rem;
+      position: relative;
+      top: -102rem;
+      font-size: 15px;
+  }
+  
+  #metodo_de_pago_logo {
+      height: 160px;
+      width: 350px;
+      margin-left: 87rem;
+      position: relative;
+      top: -104rem;
+  }
+  
+  section .pagina-de-producto-encabezado {
+      position: relative;
+      top: -96rem;
+      color: black;
+  }
+  
+  section .pagina-de-producto-encabezado2 {
+      position: relative;
+      top: -96rem;
+      margin-left: 1rem;
+      color: black;
+  }
+  
+  div .Descripcion {
+      position: relative;
+      top: -94rem;
+      color: black;
+      margin-left: 10rem;
+  }
+  
+  div .texto-1 {
+      position: relative;
+      top: -1rem;
+      margin-left: 10rem;
+      font-size: 1.1rem;
+  }
+  
+  div .msg-barra-cargadora-ss {
+      position: relative;
+      top: 5rem;
+      margin-left: 5rem;
+      font-size: 1.1rem;
+  }
+  
+  #miProgreso {
+      width: 70%;
+      height: 15px;
+      background-color: lightgray;
+      top: 6rem;
+      margin-left: 5rem;
+      position: relative;
+  }
+  
+  #barra_de_carga {
+      width: 1%;
+      height: 15px;
+      background-color: limegreen;
+  }
+  
+  div .dato_carga_de_barra .Cantidad-inicial {
+      position: relative;
+      top: 7rem;
+      margin-left: 5rem;
+      font-size: 1.1rem;
+  }
+  
+  div .dato_carga_de_barra .Cantidad-total {
+      position: relative;
+      top: 7rem;
+      margin-left: 17.4rem;
+      font-size: 1.1rem;
+  }
+  
+  .titulo_sucursal {
+      position: relative;
+      top: -37rem;
+      margin-left: 33rem;
+      font-size: 20px;
+      text-decoration: underline;
+      color: black;
+    }
+  
+    .icono-sucursal img {
+      width: 80px;
+      height: 50px;
+      position: relative;
+      top: -40rem;
+      margin-left: 27rem;
+    }
+  
+    div .texto_3 {
+      position: relative;
+      top: -36rem;
+      margin-left: 33rem;
+      font-size: 1.1rem;
+    }
+  
+    .sucursales {
+      position: relative;
+      top: -36rem;
+      margin-left: 33rem;
+      color: rgb(34, 239, 239);
+    }
 
         } 
 
