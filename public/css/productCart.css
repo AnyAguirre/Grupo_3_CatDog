@@ -1,5 +1,4 @@
 :root {
-  --font-bebas: 'Bebas Neue', cursive;
   --font-roboto: 'Roboto', sans-serif;
   --color-primary: rgb(35, 179, 232);
   --color-secundary: #01c167;
@@ -10,104 +9,153 @@
 
 
 *{
+  padding: 0;
+  margin: 0;
+  font-family: var(--fuente-roboto);
   box-sizing: border-box;
 }
 
-body::-webkit-scrollbar {
-  width: 8px;
-}
 
-
-
-h2 {
-  font-size: 1.5rem;
-  background-color: darkorange;
-}
-h2 {
+.main h2 {
+  font-size: 24px;
   display: flex;
-  width: 85%;
-  flex-direction: column;
+  width: 100%;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin-left: 2rem;
-  border-radius: 1rem;
+  margin: 0 0 0.5rem;
+  padding: 0.2rem;
+  background-color: var(--celeste-claro);
 }
 
 .main_producto {
-  width: 12rem;
-    height: 12rem;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    border-radius: 10rem;
-    border: 1px solid #e6e6e6
+  margin: 1rem;
+  display: flex;
+  padding: 0;
+}
+hr {
+  position: relative;
+  width: 100%;
+  margin: 0.2rem 0 0.4rem;
+  font-size: 16px;
+  color: black;
 }
 
 .main_boton_eliminar{
-background-color: #01c167;
+  border: none;
+  width: 1rem;
+  max-height: 25vh;
+  border-radius: 4px;
+  font-size: 1rem;
+  }
+
+.mi{
+  display: flex;
+  width: 100%;
+  height: 8.5rem;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.1rem;
+  margin: 0.3rem 0;
 }
 
-
-.main_foto{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: aqua;
-}
-
-.main_detalle{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0.5rem;
+.main_foto img{
   
+  justify-content: center;
+  width: 85px;
+  height: 75px;
+  padding: 0;
+  margin: 0;
 }
+
 .main_detalle{
-  color: black;
-  background-color: #524F9E;
+    position: relative;
+    display: flex;
+    text-align: right;
+    font-size: 0.7rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-height: 25vh;
+
 }
 
-.main_boton_cantidad{
+.mi2 {
   display: flex;
-  padding: 5px;
-  text-align: center;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.1rem;
+  margin: 0.3rem 0;
 }
 
-hr {
-  width: 50%;
-  margin: 0.5rem;
-  color: rgba(0,0,0,.30);
-  background-color: #041562;
+.main_boton_cantidad .boton{
+    border: none;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 2rem;
+    align-items: flex-end;
+    cursor: pointer;
+    margin: 0.2rem auto 0;
+    display: inline;
+    background-color: white;
 }
 
 ul p{ 
-  font-size: 1rem;
-  font-weight: bold;
-  background-color: #01c167;
+    width: 100%;
+    align-items: flex-end;
+    font-size: 1rem;
+    justify-content: center;
 }
- 
+
 
 .main_códigoPostal{
-background-color: mediumpurple;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 6rem;
+  background-color: rgb(214, 231, 236);
 }
 
+.main_códigoPostal .input-text{
+  border: hidden;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  margin-bottom: 0.2rem;
+  background-color:rgb(194, 201, 243);
+}
+.main_códigoPostal .button{
+  height: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+h3{
+  font-size: 24px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 0 0.5rem;
+  padding: 0.2rem;
+}
 .main_totalCarrito{
-background-color: palevioletred;
-}
-
-.main_subtotal{
-
-}
-
-.main_envio{
-
-}
-
-.main_total{
-
+  background-color: rgb(214, 231, 236);
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  line-height: 25px;
 }
 
 .main_boton_finalizar{
-
+  border: none;
+  border-radius: 1rem;
+  height: 2.5rem;
+  width: 10rem;
+  margin: 0.2rem auto 0;
+  background-color: white;
+  text-align: center;
 }
