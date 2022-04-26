@@ -5,18 +5,18 @@ const adminProductsController = require('../controllers/admin/adminProductsContr
 /* CRUD DE PRODUCTOS */
 
 /* GET - LISTADO DE PRODUCTOS */
-router.get('/productos', adminProductsController);
+router.get('/productos', adminProductsController.list);
 /* GET - CREACION DE PRODUCTO */
-router.get('/productos/crear', adminProductsController);
+router.get('/productos/crear', adminProductsController.productCreate);
 /* GET - DETALLE DE PRODUCTO */
-router.get('/productos/:id', adminProductsController);
+router.get('/productos/:id', adminProductsController.detail);
 /* POST - CREAR PRODUCTO */
-router.post('/productos', adminProductsController);
+router.post('/productos', adminProductsController.productCreate);
 /* GET - EDITAR PRODUCTO */
-router.get('/productos/editar/:id', adminProductsController);
+router.get('/productos/editar/:id', adminProductsController.productEdit);
 /* PUT - ACTUALIZAR PRODUCTO */
-router.put('/productos/:id', adminProductsController);
+router.put('/productos/:id', adminProductsController.productUpdate);
 /* DELETE - ELIMIAR UN PRODUCTO */
-router.delete('/productos/eliminar/:id', adminProductsController);
+router.delete('/productos/eliminar/:id', adminProductsController.productDelete);
 
 module.exports = router;
