@@ -4,7 +4,7 @@ module.exports = {
     index: (req, res) => {
         res.render('admin/adminIndex', {
             titulo: "Admin",
-            productos: Product
+            productos: getProducts
         });
     }
 }
