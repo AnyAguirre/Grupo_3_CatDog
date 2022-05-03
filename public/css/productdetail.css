@@ -6,28 +6,13 @@
     margin-top: 6rem;
 }
 
-.imagen-2 {
-    height: 160px;
-    width: 160px;
-    margin-left: 4rem;
-    position: relative;
-    top: 1rem;
-}
- .imagen-3 {
-    height: 160px;
-    width: 160px;
-    margin-left: 12.5rem;
-    position: relative;
-    top: -9.5rem;
-}
-
 /*Nombre Producto*/
 
 .Nombre_producto {
     width: auto;
     height: auto;
     position: relative;
-    top: -45.5rem;
+    top: -25.5rem;
     margin-left: 27rem;
     font-size: 25px;
     color: black;
@@ -39,7 +24,7 @@
     width: auto;
     height: auto;
     position: relative;
-    top: -44.5rem;
+    top: -23rem;
     margin-left: 27rem;
     font-size: 20px;
     color: black;
@@ -51,7 +36,7 @@
     width: auto;
     height: auto;
     position: relative;
-    top: -44rem;
+    top: -23rem;
     margin-left: 27rem;
     font-size: 20px;
     color: black;
@@ -105,17 +90,17 @@
 
   .precio {
       position: relative;
-      top: -68rem;
-      margin-left: 90rem;
+      top: -48rem;
+      margin-left: 97.5rem;
       font-size: 30px;
       color: black;
       z-index: 10;
   }
 
   .conjunto_campo_atributo {
-    margin-left: 78.5rem;
+    margin-left: 86rem;
     position: relative;
-    top: -71rem;
+    top: -51rem;
     background-color: white;
     
   }
@@ -165,9 +150,9 @@
 div .fondo_carro_de_caja .exclusivo{
     height: 80px;
     width: 250px;
-    margin-left: 85.5rem;
+    margin-left: 93rem;
     position: relative;
-    top: -108rem;
+    top: -88rem;
     font-size: 20px;
     background-color: gainsboro;
 }
@@ -175,43 +160,46 @@ div .fondo_carro_de_caja .exclusivo{
 div .cantidad {
     height: 160px;
     width: 350px;
-    margin-left: 85.5rem;
+    margin-left: 92rem;
     position: relative;
-    top: -102rem;
+    top: -83rem;
     font-size: 15px;
 }
 
 #metodo_de_pago_logo {
     height: 160px;
     width: 350px;
-    margin-left: 87rem;
+    margin-left: 93.5rem;
     position: relative;
-    top: -104rem;
+    top: -84rem;
 }
 
 section .pagina-de-producto-encabezado {
     position: relative;
-    top: -96rem;
+    top: -77rem;
     color: black;
+    font-size: 40px;
 }
 
 section .pagina-de-producto-encabezado2 {
     position: relative;
-    top: -96rem;
+    top: -77rem;
     margin-left: 1rem;
     color: black;
+    font-size: 40px;
 }
 
 div .Descripcion {
     position: relative;
-    top: -94rem;
+    top: -74rem;
     color: black;
     margin-left: 1rem;
+    font-size: 25px;
 }
 
 div .Envios .Opciones_envios .titulo {
     position: relative;
-    top: -42rem;
+    top: -20rem;
     margin-left: 27rem;
     font-size: 20px;
     color: rgb(91, 205, 205);
@@ -219,7 +207,7 @@ div .Envios .Opciones_envios .titulo {
 
 div .Envios .titulo_domicilio {
     position: relative;
-    top: -45rem;
+    top: -23rem;
     margin-left: 33rem;
     font-size: 18px;
     color: black;
@@ -230,20 +218,20 @@ div .Envios .titulo_domicilio {
     width: 90px;
     height: 80px;
     position: relative;
-    top: -40.6rem;
+    top: -18rem;
     margin-left: 27rem;
 }
 
 div .texto-1 {
     position: relative;
-    top: -44rem;
+    top: -22rem;
     margin-left: 33rem;
     font-size: 1.1rem;
 }
 
 div .msg-barra-cargadora-ss {
     position: relative;
-    top: -39rem;
+    top: -13rem;
     margin-left: 33rem;
     font-size: 1.1rem;
 }
@@ -252,7 +240,7 @@ div .msg-barra-cargadora-ss {
     width: 30%;
     height: 15px;
     background-color: lightgray;
-    top: -38.6rem;
+    top: -12.5rem;
     margin-left: 33rem;
     position: relative;
 }
@@ -265,21 +253,21 @@ div .msg-barra-cargadora-ss {
 
 div .dato_carga_de_barra .Cantidad-inicial {
     position: relative;
-    top: -38.6rem;
+    top: -11.5rem;
     margin-left: 33rem;
     font-size: 1.1rem;
 }
 
 div .dato_carga_de_barra .Cantidad-total {
     position: relative;
-    top: -38.6rem;
-    margin-left: 24.2rem;
+    top: -11.5rem;
+    margin-left: 31rem;
     font-size: 1.1rem;
 }
 
 .titulo_sucursal {
     position: relative;
-    top: -37rem;
+    top: -4rem;
     margin-left: 33rem;
     font-size: 20px;
     text-decoration: underline;
@@ -290,20 +278,20 @@ div .dato_carga_de_barra .Cantidad-total {
     width: 80px;
     height: 50px;
     position: relative;
-    top: -40rem;
+    top: -7rem;
     margin-left: 27rem;
   }
 
   div .texto_3 {
     position: relative;
-    top: -36rem;
+    top: -3rem;
     margin-left: 33rem;
     font-size: 1.1rem;
   }
 
   .sucursales {
     position: relative;
-    top: -36rem;
+    top: -1rem;
     margin-left: 33rem;
     color: rgb(34, 239, 239);
   }
