@@ -5,8 +5,4 @@ titulo: "Registrate"
     login: (req, res) => res.render('user/login', {
 titulo: "Ingresa"
     })
-
-
-
-
 }

@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/AnyAguirre/Grupo_3_CatDog#readme",
   "dependencies": {
-    "ejs": "^3.1.6",
+    "ejs": "^3.1.7",
     "express": "^4.17.3",
     "method-override": "^3.0.0"
   }

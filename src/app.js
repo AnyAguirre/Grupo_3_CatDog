@@ -6,7 +6,9 @@ const methodoverride = require('method-override');
 
 app.use(express.static('public'));
 
+/* Temple engine config */
 app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 app.set('views', path.join(__dirname, 'views'));
 
 

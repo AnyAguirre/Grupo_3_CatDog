@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Purina Excellent Puppy",
+        "codigo": 32439,
         "marca": "Purina",
         "description": "Razas medianas y grandes, contiene pollo y arroz",
         "image": "1.jpg",
@@ -13,6 +14,7 @@
     {
         "id": 2,
         "name": "Purina Excellent Adult",
+        "codigo": 12342,
         "marca": "Purina",
         "description": "Razas medianas y grandes, contiene pollo y arroz",
         "image": "2.jpg",
@@ -24,6 +26,7 @@
     {
         "id": 3,
         "name": "Purina Proplan",
+        "codigo": 82435,
         "marca": "Purina",
         "description": "Adultos",
         "image": "3.jpg",
@@ -35,6 +38,7 @@
     {
         "id": 4,
         "name": "Agility wet",
+        "codigo": 56675,
         "marca": "Agility",
         "description": "alimento para gatos adultos 90g",
         "image": "4.jpg",
@@ -46,6 +50,7 @@
     {
         "id": 5,
         "name": "Agility wet",
+        "codigo": 22342,
         "marca": "Agility",
         "description": "alimento para gatos adultos 340g",
         "image": "5.jpg",
@@ -57,6 +62,7 @@
     {
         "id": 6,
         "name": "Purina Exellent Kitten",
+        "codigo": 33422,
         "marca": "Purina",
         "description": "alimento para gatos adultos 340g",
         "image": "6.jpg",
@@ -68,6 +74,7 @@
     {
         "id": 7,
         "name": "Royal Canin Poodle 30 Adult",
+        "codigo": 70989,
         "marca": "Royal Canin",
         "description": "Alimento balanceado para caniches cachorros de 2 a 10 meses de edad. ",
         "image": "7.jpg",
@@ -79,6 +86,7 @@
     {
         "id": 8,
         "name": "vital can",
+        "codigo": 36645,
         "marca": "Vital Can",
         "description": "Alimento balanceado",
         "image": "8.jpg",
@@ -90,6 +98,7 @@
     {
         "id": 9,
         "name": "Royal Canin Royal Canin Pack Sobrecitos Mini Puppy",
+        "codigo": 44543,
         "marca": "Royal Canin",
         "description": "Alimento para perros cachorros de talla pequeña (hasta 10kg de peso adulto). Hasta los 10 meses de edad.",
         "image": "9.jpg",
@@ -101,6 +110,7 @@
     {
         "id": 10,
         "name": "Royal Canin Bulldog Frances Adulto",
+        "codigo": 11123,
         "marca": "Royal Canin",
         "description": "Alimento para perros adultos y maduros de raza Bulldog Francés – Desde los 12 meses de edad.",
         "image": "10.jpg",
@@ -112,6 +122,7 @@
     {
         "id": 11,
         "name": "Eukanuba Puppy",
+        "codigo": 22483,
         "marca": "Eukanuba",
         "description": "Alimento para perros adultos. Desde los 12 meses de edad.",
         "image": "11.jpg",
@@ -123,6 +134,7 @@
     {
         "id": 12,
         "name": "Eukanuba Weight Control",
+        "codigo": 32430,
         "marca": "Eukanuba",
         "description": "Alimento para perros adultos. Desde los 12 meses de edad.",
         "image": "12.jpg",
@@ -134,6 +146,7 @@
     {
         "id": 13,
         "name": "Eukanuba Senior",
+        "codigo": 47837,
         "marca": "Eukanuba",
         "description": "Alimento para perros grandes y medianos. Desde los 12 meses de edad.",
         "image": "13.jpg",
@@ -145,6 +158,7 @@
     {
         "id": 14,
         "name": "Dog Chow Cachorros Minis y Pequeños",
+        "codigo": 66564,
         "marca": "Dog Chow",
         "description": "Alimento balanceado completo para cachorros de tamaño pequeño de 1,5 a 12 meses, hembras gestantes y lactantes",
         "image": "14.jpg",
@@ -156,6 +170,7 @@
     {
         "id": 14,
         "name": "Purina ProPlan Adult",
+        "codigo": 33431,
         "marca": "Purina",
         "description": "Alimento para perros grandes",
         "image": "img-comida.png",

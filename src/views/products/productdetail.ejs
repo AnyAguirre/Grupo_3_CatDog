@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <%- include("../partials/header") %> 
-
 <body>
-
-    <%- include("../partials/head") %>
-
+    <%- include("../partials/head") %> 
     <main>
         <!-- header -->
     <div class="Producto">
@@ -17,15 +13,14 @@
                 <!-- Imagen Pagina -->
         <div class="imagenes">
             <span class="tamaño">
-                <img id="bigpic" src="../img/img-comida.png" width="420" height="420">
+                <img src="../../../img/carrusel/<%= products.image %>" width="420" height="420">
             </span>
         </div>
-                <h1 itemprop="Alimento Pro Plan para Perro Adulto Mediano - 15+3Kg "></h1>
             </div>
             <!-- Codigo de Producto -->
             <!-- Stars Opinion -->
-            <div class="Nombre_producto">Alimento Pro Plan para Perro Adulto Mediano - 15+3Kg</div>
-            <div class="Cod_Producto">còdigo de producto: | 33412</div>
+            <div class="nombre-producto"> <h1> <%= products.name %> </h1> </div>
+            <div class="codigo"> <p> <%= products.codigo %> </p> </div>
                 <div class="producto_reseña_estrellas">
                     <span id="spnRatingProductoTop" class="rating-producto"></span>
                     <form>
@@ -99,8 +94,8 @@
                 <div class="caja-info-producto">
                     <div class="precios_de_contenido">
                         <!-- precios -->
-                        <div>
-                            <span id="nuestro_precio" class="precio" itemprop="precio" content="xxxx">$ 4.421</span>
+                        <div class="precio">
+                            <span> <%= products.price %> </span>
                             <meta itemprop="Precio_actual" content="ARS">
                         </div>
                     </div>
@@ -180,10 +175,7 @@
             <button class="pagina-de-producto-encabezado">descripción</button> 
             <button class="pagina-de-producto-encabezado2">opciones</button>
         </section>
-        <div class="Descripcion"> Purina Pro Plan provee nutrición de avanzada que ayuda a los perros de razas medianas a mantenerse fuertes y llenos de vitalidad. 
-            A su vez, también ayuda a otras cosas claves en el cuidado de la mascota, tales como reforzar el sistema inmune, fortalecer la microflora intestinal y reforzar la barrera cutánea. 
-            Esta fórmula ofrece, a través de sus sabrosas croquetas, un contenido rico en proteínas (26%) y grasas (15%), utilizando como ingrediente principal carne fresca de pollo, que ayuda a los perros a mantener la masa corporal magra y músculos fuertes.
-        </div>
+        <div class="Descripcion"> <%= products.description %> </div>
         </div>
     </div>
 

@@ -1,94 +1,127 @@
 const { products, writeProducts, getProducts } = require('../../data');
 
-module.exports = {
-    
+const adminProductsController = {
 
+    //Muestra la lista de productos
     list: (req, res) => {
+
         res.render('admin/listproduct', {
-            titulo: "Listado de productos",
-            productos: Product
+            products,
         })
     },
-
-    
+    //muestra detalle del producto en admin
     detail: (req, res) => {
-        let productsId = +req.params.id;
-        let product = products.find(product => product.id === productsId);
-    },
+        let productId = +req.params.id;
+        let product = products.find(product => product.id === productId);
 
-
-    productAdd: (req, res) => {
-        res.render('admin/addproduct', {
-            titulo: "Agregar producto"
+        res.render('admin/adminDetail', {
+            product,
+            products,
         })
     },
-    
-
+    //Envia la vista de formulario de la creacion de producto
+    productAdd: (req, res) => {
+        res.render('admin/addproduct')
+    },
+    //Recibe los datos del form de la creacion y lo guarda en la DB
     productCreate: (req, res) => {
+
         let lastId = 0;
-        getProducts.forEach(product => {
+        products.forEach(product => {
             if(product.id > lastId){
                 lastId = product.id;
             }
         });
 
-        let newProduct = {
-            ...req.body, 
-            id: lastId + 1,
-            image: req.file ? req.file.filename : "",
-            stock: req.body.stock ? true : false
-        }
+        let file = req.file;
         
-        Product.push(newProduct)
+        if(!file) {
+            res.redirect('admin/productCreate')
+        } else {
 
-       writeProducts(getProducts)
+            let newProduct = {
+                ...req.body, 
+                id: lastId + 1,
+                image: file.filename,
+                stock: req.body.stock ? true : false
+            }  
+            Product.push(newProduct)
+           writeProducts(products)
+           res.redirect('/admin/producto')
 
-       res.redirect('/admin/productos')
+        }
     },
-    
-
+    //edicion de producto
     productEdit: (req, res) => {
-        let idProducto = +req.params.id;
-        let producto = getProducts.find(producto => producto.id === idProducto)
+
+        let idProduct = +req.params.id;
+
+        let product = getProducts.find(product => producto.id === idProduct)
+
         res.render('admin/editproduct', {
             titulo: "Edición",
-            producto
+            product,
         })
     },
-
-
+    //Recibe datos actualizados del form de edicion
     productUpdate: (req, res) => {
-        let idProducto = +req.params.id;
-        getProducts.forEach(producto => {
-            if(producto.id === idProducto){
-                producto.name = req.body.name
-                producto.price = req.body.price
-                producto.discount = req.body.discount
-                producto.categoryId = req.body.categoryId
-                producto.projectId = req.body.projectId
-                producto.stock = req.body.stock ? true : false
-                producto.description = req.body.description
-            }
-        })
- 
-        writeProducts(getProducts);
 
-        res.redirect('/admin/productos');
+        let idProduct = +req.params.id;
+
+        let file = req.file
+
+        if(!file) {
+            Products.forEach(product => {
+                if(producto.id === idProducto){
+                    producto.name = req.body.name
+                    producto.price = req.body.price
+                    producto.discount = req.body.discount
+                    producto.category = req.body.category
+                    producto.stock = req.body.stock ? true : false
+                    producto.description = req.body.description
+                }
+            });
+            writeProducts(product);
+
+        res.redirect('/admin/producto');
+
+        } else {
+
+            Products.forEach(product => {
+                if(producto.id === idProducto){
+                    producto.name = req.body.name
+                    producto.price = req.body.price
+                    producto.discount = req.body.discount
+                    producto.category = req.body.category
+                    producto.stock = req.body.stock ? true : false
+                    producto.description = req.body.description
+                }
+            });
+
+            writeProducts(products);
+
+        res.redirect('/admin/producto');
+
+        }
     },
-    
-
     productDelete: (req, res) => {     
-        let idProducto = +req.params.id;
-        getProducts.forEach(producto => {
-            if(producto.id === idProducto){           
-                let productToDeleteIndex = getProducts.indexOf(producto);              
+
+        let idProduct = +req.params.id;
+
+        products.forEach(product => {
+            if(producto.id === idProduct){  
+
+                let productToDeleteIndex = getProducts.indexOf(product); 
+
                 getProducts.splice(productToDeleteIndex, 1)
             }
-        })
-        writeProducts(getProducts);
-        res.redirect('/admin/productos')
-    },
-    productSearch: (req, res) => {
+        });
+
+        writeProducts(products);
+
+        res.redirect('/admin/producto')
 
     },
 }
+
+module.exports = adminProductsController;
