@@ -1,14 +1,16 @@
 const { products, writeProducts, getProducts } = require('../../data');
+const { validationResult } = require('express-validator');
 
-const adminProductsController = {
+module.exports = {
 
     //Muestra la lista de productos
     list: (req, res) => {
-
         res.render('admin/listproduct', {
-            products,
+            titulo: "Listado de productos", 
+            productos: products
         })
     },
+    
     //muestra detalle del producto en admin
     detail: (req, res) => {
         let productId = +req.params.id;
@@ -16,102 +18,115 @@ const adminProductsController = {
 
         res.render('admin/adminDetail', {
             product,
-            products,
         })
     },
     //Envia la vista de formulario de la creacion de producto
     productAdd: (req, res) => {
-        res.render('admin/addproduct')
+        res.render('admin/addproduct', {
+            titulo: "Agregar producto"
+        })
     },
     //Recibe los datos del form de la creacion y lo guarda en la DB
     productCreate: (req, res) => {
-
-        let lastId = 0;
-        products.forEach(product => {
-            if(product.id > lastId){
-                lastId = product.id;
-            }
-        });
-
-        let file = req.file;
-        
-        if(!file) {
-            res.redirect('admin/productCreate')
-        } else {
+        let errors = validationResult(req);
+       
+        if(errors.isEmpty()){
+            /* 1 - Crear el objeto producto */
+            let lastId = 0;
+            products.forEach(product => {
+                if(product.id > lastId){
+                    lastId = product.id;
+                }
+            });
 
             let newProduct = {
                 ...req.body, 
                 id: lastId + 1,
-                image: file.filename,
+                image: req.file ? req.file.filename : "default-image.png",
                 stock: req.body.stock ? true : false
-            }  
-            Product.push(newProduct)
-           writeProducts(products)
-           res.redirect('/admin/producto')
+            }
+            
+            // Paso 2 - Guardar el nuevo producto en el array de usuarios
 
+            products.push(newProduct)
+
+            // Paso 3 - Escribir el JSON de productos con el array actual
+
+            writeProducts(products)
+
+            // Paso 4 - Devolver respuesta (redirección)
+
+            res.redirect('/admin/productos')
+        }else{
+            res.render('admin/products/addProduct', {
+                titulo: "Agregar producto",
+                errors: errors.mapped(),
+                old: req.body
+            })
         }
     },
     //edicion de producto
     productEdit: (req, res) => {
 
-        let idProduct = +req.params.id;
+        let idProducto = +req.params.id;
 
-        let product = getProducts.find(product => producto.id === idProduct)
+        let producto = getProducts.find(producto => producto.id === idProducto)
 
         res.render('admin/editproduct', {
             titulo: "Edición",
-            product,
+            producto,
         })
     },
     //Recibe datos actualizados del form de edicion
     productUpdate: (req, res) => {
+        /* 1 - Obtener el id del producto */
+        let idProducto = +req.params.id;
+        /* 2 - Buscar el producto a editar y modificar el producto */
+        products.forEach(producto => {
+            if(producto.id === idProducto){
+                producto.name = req.body.name
+                producto.price = req.body.price
+                producto.discount = req.body.discount
+                producto.categoryId = req.body.categoryId
+                producto.projectId = req.body.projectId
+                producto.stock = req.body.stock ? true : false
+                producto.description = req.body.description
+            }
+        })
 
-        let idProduct = +req.params.id;
+        /* 3 - Guardar los cambios */
+        writeProducts(products);
 
-        let file = req.file
-
-        if(!file) {
-            Products.forEach(product => {
-                if(producto.id === idProducto){
-                    producto.name = req.body.name
-                    producto.price = req.body.price
-                    producto.discount = req.body.discount
-                    producto.category = req.body.category
-                    producto.stock = req.body.stock ? true : false
-                    producto.description = req.body.description
-                }
-            });
-            writeProducts(product);
-
-        res.redirect('/admin/producto');
-
-        } else {
-
-            Products.forEach(product => {
-                if(producto.id === idProducto){
-                    producto.name = req.body.name
-                    producto.price = req.body.price
-                    producto.discount = req.body.discount
-                    producto.category = req.body.category
-                    producto.stock = req.body.stock ? true : false
-                    producto.description = req.body.description
-                }
-            });
-
-            writeProducts(products);
-
-        res.redirect('/admin/producto');
-
-        }
+        /* 4 - Respuesta */
+        res.redirect('/admin/productos');
     },
+    /* Recibe la info del producto a eliminar */
+    productDelete: (req, res) => {
+        /* 1 - Obtener el id del producto a eliminar */
+        let idProducto = +req.params.id;
+        /* 2 - Buscar el producto dentro del array y eliminarlo */
+        products.forEach(producto => {
+            if(producto.id === idProducto){
+                //Obtener la ubicación (índice) del producto a eliminar
+                let productToDeleteIndex = products.indexOf(producto);
+                //Elimino el producto del array
+                products.splice(productToDeleteIndex, 1)
+            }
+        })
+        /* 3 - Sobreescribir el json */
+        writeProducts(products);
+        /* 4 - Enviar respuesta  */
+        res.redirect('/admin/productos')
+    },
+
     productDelete: (req, res) => {     
 
-        let idProduct = +req.params.id;
+        let idProducto = +req.params.id;
 
-        products.forEach(product => {
-            if(producto.id === idProduct){  
+        products.forEach(producto => {
+            if(producto.id === idProducto){  
 
-                let productToDeleteIndex = getProducts.indexOf(product); 
+                let productToDeleteIndex = getProducts.indexOf(producto); 
 
                 getProducts.splice(productToDeleteIndex, 1)
             }
@@ -119,9 +134,8 @@ const adminProductsController = {
 
         writeProducts(products);
 
-        res.redirect('/admin/producto')
+        res.redirect('/admin/productos')
 
     },
 }
 
-module.exports = adminProductsController;

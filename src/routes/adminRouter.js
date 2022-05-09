@@ -1,5 +1,6 @@
 const express = require('express');
-const router = express.Router( );
+const router = express.Router();
+const adminController = require('../controllers/admin/adminController')
 const adminProductsController = require('../controllers/admin/adminProductsController');
 
 /* CRUD DE PRODUCTOS */
@@ -7,11 +8,11 @@ const adminProductsController = require('../controllers/admin/adminProductsContr
 /* GET - LISTADO DE PRODUCTOS */
 router.get('/productos', adminProductsController.list);
 /* GET - CREACION DE PRODUCTO */
-router.get('/productos/create', adminProductsController.productCreate);
+router.get('/productos/agregar', adminProductsController.productAdd);
 /* GET - DETALLE DE PRODUCTO */
 router.get('/productos/:id', adminProductsController.detail);
 /* POST - CREAR PRODUCTO */
-router.post('/productos', adminProductsController.productAdd);
+router.post('/productos', adminProductsController.productCreate);
 /* GET - EDITAR PRODUCTO */
 router.get('/productos/editar/:id', adminProductsController.productEdit);
 /* PUT - ACTUALIZAR PRODUCTO */
