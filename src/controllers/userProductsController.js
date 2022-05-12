@@ -5,7 +5,8 @@ module.exports = {
         res.render("products/products", {
             products,
             titulo:"Productos",
-            css: "products.css"
+            css: "products.css",
+            session: req.session
         })
     },
     detail: (req, res) => {
@@ -14,6 +15,7 @@ module.exports = {
      res.render("products/productDetail", {
          css: "productDetail.css",
          titulo:"Detalle de producto",
+         session: req.session,
          product
      })
     },

@@ -4,9 +4,9 @@ const path = require('path');
 //require('dotenv').config();
 const PORT = 3030;
 const methodoverride = require('method-override');
-//const session = require('express-session');
-//const cookieParser = require('cookie-parser')
-//const cookieSession = require('./middlewares/cookieSession');
+const session = require('express-session');
+const cookieParser = require('cookie-parser')
+const cookieSession = require('./middlewares/cookieSession');
 
 app.use(express.static('public'));
 
@@ -16,9 +16,13 @@ app.set('views', path.join(__dirname, 'views'));
 
 /* Middlewares de aplicacion */
 app.use(express.static(path.join(__dirname, '../public')));
-app.use(express.urlencoded({ extensed: false}));
+app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 app.use(methodoverride('_method'));
+        /* session */
+app.use(session({secret: 'catdog!!'}));
+app.use(cookieParser());
+//app.use(cookieSession());
 
 /*Enrutadores*/
 const indexRouter = require('./routes/indexRouter');
