@@ -4,19 +4,18 @@ const usersControllers = require('../controllers/userController');
 
 
 //middlewares
-const userLogged = require("../middlewares/userLogged");
+const userLogged = require("../middlewares/userInSessionCheck");
 const uploadAvatar = require("../middlewares/uploadAvatar");
 
 //validations
 const registerValidator =require("../validations/registerValidator");
-const loginValidator = require("../validations/loginValidator");
-const profileValidator = require("../validations/profileValidator")
 
-router.get('/registro', userController.registro);
 
-router.get('/login', userController.login);
+router.get('/registro', usersControllers.registro);
 
-router.get('/logout', userController.logout);
+router.get('/login', usersControllers.login);
+
+router.get('/logout', usersControllers.logout);
 
 
 router.get("/register", userLogged, usersControllers.register);
