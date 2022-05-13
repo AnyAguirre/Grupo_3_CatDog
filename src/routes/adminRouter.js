@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const adminController = require('../controllers/admin/adminController')
 const adminProductsController = require('../controllers/admin/adminProductsController');
+const adminCheck = require('../middlewares/adminCheck')
 
 /* CRUD DE PRODUCTOS */
 
@@ -9,8 +10,6 @@ const adminProductsController = require('../controllers/admin/adminProductsContr
 router.get('/productos', adminProductsController.list);
 /* GET - CREACION DE PRODUCTO */
 router.get('/productos/agregar', adminProductsController.productAdd);
-/* GET - DETALLE DE PRODUCTO */
-router.get('/productos/:id', adminProductsController.detail);
 /* POST - CREAR PRODUCTO */
 router.post('/productos', adminProductsController.productCreate);
 /* GET - EDITAR PRODUCTO */

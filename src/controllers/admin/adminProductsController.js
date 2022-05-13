@@ -1,5 +1,11 @@
-const { products, writeProducts, getProducts } = require('../../data');
-const { validationResult } = require('express-validator');
+const fs = require('fs');
+const path = require('path');
+
+const productsFilePath = path.join(__dirname, '../../data/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const writeProducts = (data) => fs.writeFileSync(productsFilePath, JSON.stringify(data), 'utf-8')
+/* const { products, writeProducts, getProducts } = require('../../data');
+const { validationResult } = require('express-validator'); */
 
 module.exports = {
 
@@ -8,16 +14,6 @@ module.exports = {
         res.render('admin/listproduct', {
             titulo: "Listado de productos", 
             productos: products
-        })
-    },
-    
-    //muestra detalle del producto en admin
-    detail: (req, res) => {
-        let productId = +req.params.id;
-        let product = products.find(product => product.id === productId);
-
-        res.render('admin/adminDetail', {
-            product,
         })
     },
     //Envia la vista de formulario de la creacion de producto

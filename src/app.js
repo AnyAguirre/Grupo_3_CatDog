@@ -1,8 +1,6 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const process = require("process");
-//require("dotenv").config();
 const PORT = 3030;
 const methodoverride = require('method-override');
 const session = require('express-session');
@@ -21,7 +19,12 @@ app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 app.use(methodoverride('_method'));
         /* session */
-app.use(session({secret: 'catdog!!'}));
+app.use(session({
+secret: 'catdog!!',
+reseave: false,
+saveUninitialized: true,
+cookie: {}
+}));
 app.use(cookieParser());
 //app.use(cookieSession());
 
