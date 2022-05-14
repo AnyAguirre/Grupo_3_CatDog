@@ -18,10 +18,10 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 app.use(methodoverride('_method'));
-  /* session */
+/* session */
 app.set('trust proxy', 1);
 app.use(session({
-    secret:"formar",
+    secret:"catdog!!",
     resave: false,
     saveUninitialized: true,
     cookie: {}
