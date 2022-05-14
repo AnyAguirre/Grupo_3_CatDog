@@ -1,5 +1,6 @@
 const {getUsers, saveUsers} = require("../data/index");
 
+const {users, writeUsers} = require('../data');
 const {validationResult} = require("express-validator");
 const bcrypt = require("bcryptjs");
 
@@ -56,11 +57,16 @@ session: req.session
 
     },
     processLogin: (req, res) => {
+        let errors = validationResult(req);
+        if(errors.isEmpty()){
+        //levantar sesión
         let user = user.find(user => user.email === req.body.email)
+        
         req.session.user ={
             id: user.id,
             first_name: user.first_name,
             email: user.email,
+            avatar: user.avatar,
             rol: user.rol
         }
 
@@ -76,6 +82,13 @@ session: req.session
     res.locals.user = req.session.user
 
     res.redirect('/')
+    }else{
+    res.render('user/login', {
+        titulo: "Ingresa",
+        errors: errors.mapped(),
+        session: req.session
+    })
+    }
     },
     logout: (req,res) => {
         req.session.destroy();

@@ -18,15 +18,16 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 app.use(methodoverride('_method'));
-        /* session */
+  /* session */
+app.set('trust proxy', 1);
 app.use(session({
-secret: 'catdog!!',
-reseave: false,
-saveUninitialized: true,
-cookie: {}
+    secret:"formar",
+    resave: false,
+    saveUninitialized: true,
+    cookie: {}
 }));
 app.use(cookieParser());
-//app.use(cookieSession());
+app.use(cookieSession)
 
 /*Enrutadores*/
 const indexRouter = require('./routes/indexRouter');
