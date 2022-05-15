@@ -10,7 +10,7 @@ titulo: "Registrate",
 session: req.session
     }),
     login: (req, res) => res.render('user/login', {
-titulo: "Login",
+titulo: "Ingresa",
 session: req.session
     }),
     register: (req,res) =>{
@@ -82,11 +82,12 @@ session: req.session
 
     res.locals.user = req.session.user
 
-    res.redirect('/carrito')
+    res.redirect('/')
+
     }else{
     
         res.render('user/login', {
-        titulo: "Login",
+        titulo: "Ingresa",
         errors: errors.mapped(),
         session: req.session
     })
