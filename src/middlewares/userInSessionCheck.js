@@ -1,9 +1,8 @@
-const userLogged = (req,res,next)=>{
+const userInSessionCheck = (req,res,next)=>{
     if(req.session.user){
         return res.redirect("/")
-    } else {
-        next()
     }
-}
+        next()
+};
 
-module.exports = userLogged;
+module.exports = userInSessionCheck;

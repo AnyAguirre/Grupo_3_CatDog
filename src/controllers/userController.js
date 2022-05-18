@@ -1,73 +1,80 @@
-const {getUsers, saveUsers} = require("../data/index");
-
-const {users, writeUsers} = require('../data/index');
+const {users, writeUsers} = require('../data');
 const {validationResult} = require("express-validator");
 const bcrypt = require("bcryptjs");
 
 module.exports = {
-    registro: (req, res) => res.render('user/register', {
-titulo: "Registrate",
-session: req.session
-    }),
-    login: (req, res) => res.render('user/login', {
-titulo: "Ingresa",
-session: req.session
-    }),
+    login: (req, res) =>{ 
+        res.render('user/login', {
+           titulo: "Login",
+           session: req.session
+        })
+    },
     register: (req,res) =>{
-        res.render("users/register",{
-            titulo:"Registrarme",
+        res.render("user/register",{
+            titulo:"Registro",
             session:req.session
         })
     },
 
     processRegister: (req, res)=>{
+        let errors = validationResult(req);    //verifica si hubo errores en el form
         
-        errors = validationResult(req);
+       if(errors.isEmpty()){     //si no hay errores, crea el usuario
+       
+       // crea un usuario(Registrar un usuario - Guardarlo en el JSON)
+       //Paso 1 - Crear un objeto User
 
-        if(errors.isEmpty()){
             let lastId = 0;
-
-            getUsers.forEach(user => {
+            users.forEach(user => {
                 if(user.id > lastId){
                     lastId = user.id
                 }
             });
 
             let newUser = {
+                id: lastId + 1,
                 name: req.body.name,
                 surname: req.body.surname,
                 email: req.body.email,
-                password: bcrypt.hashSync(req.body.password,12),
-                avatar: req.file ? req.file.filename : "default.jpg"
+                password: bcrypt.hashSync(req.body.password, 10),
+                avatar: req.file ? req.file.filename : "default.jpg",
+                rol: "USER"
             }
 
-            getUsers.push(newUser)
+        // Paso 2 - Guardar el nuevo usuario en el array de usuarios
 
-            saveUsers(getUsers)
+            users.push(newUser)
 
-            res.redirect("/login")
+        // Paso 3 - Escribir el JSON de usuarios con el array actual
+
+            writeUsers(users)
+
+        // Paso 4 - Devolver respuesta (redirección)
+
+            res.redirect("/user/login")
+
         } else {
-            res.render("users/register",{
-                titulo:"Registrarme",
+            //codigo que muestra en caso de que encontro errores
+            res.render('user/register',{
+                titulo:"Registro",
                 errors: errors.mapped(),
-                old:req.body,
                 session:req.session
             })
         }
-
     },
     processLogin: (req, res) => {
         let errors = validationResult(req);
-        
+       
         if(errors.isEmpty()){
         //levantar sesión
         let user = users.find(user => user.email === req.body.email)
         
         req.session.user ={
             id: user.id,
-            first_name: user.first_name,
-            email: user.email,
+            name: user.name,
+            surname: user.surname,
             avatar: user.avatar,
+            email: user.email,
             rol: user.rol
         }
 
@@ -81,17 +88,17 @@ session: req.session
     }
 
     res.locals.user = req.session.user
-
+    
     res.redirect('/')
 
     }else{
     
         res.render('user/login', {
-        titulo: "Ingresa",
+        titulo: "Login",
         errors: errors.mapped(),
         session: req.session
-    })
-    }
+        })
+      }
     },
     logout: (req,res) => {
         req.session.destroy();

@@ -10,25 +10,31 @@
     <main>
         <section class="container">
         
-            <form name="login" method="post" action="user/login"  >  
+            <form method="post" action="/user/login"  >  
                 <h2>Login</h2>
                 <div class="input-container">
                     <input type="email" class="input-style" name="email" placeholder="Ingrese su email">
-                    <span class="error-message">Debe ingresar su email</span>
+                    <% if (locals.errors && errors.email) { %>
+                        <small class="text-danger"><%= errors.email.msg %></small>
+                    <% } %>
                 </div>
                 <div class="input-container">
                     <input type="password" class="input-style" name="password" placeholder="Ingrese una contraseña">
-                    <span class="error-message">Debe ingresar su contraseña</span>
+                    <% if (locals.errors && errors.password) { %>
+                        <small class="text-danger"><%= errors.password.msg %></small>
+                    <% } %>
                 </div>
                 <div class="input_check-container">
                     <label for="remember">Recordar 
                     <input type="checkbox" name="remember" id="remember"></label>
                 </div>
+                <% if (locals.errors && errors.custom) { %>
+                    <small class="text-danger"><%= errors.custom.msg %></small>
+                <% } %>
                 <div class="btn-container">
-                    <span class="error-message">Credenciales inválidas</span>
                     <button type="submit" class="btn btn-outline-primary">Iniciar sesión</button>
                 </div>
-                <span><a href="/user/registro">No tengo cuenta</a></span>
+                <span><a href="/user/register">No tengo cuenta</a></span>
             </form>
     
         </section>

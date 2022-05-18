@@ -30,13 +30,6 @@ hr{
     
 }
 
-
-span.error-message {
-    color: rgb(71, 181, 255);
-    font-size: 10px;
-    margin: 0 auto;
-}
-
 input.input-style{
     border: none;
     border-radius: 1rem;

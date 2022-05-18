@@ -1,28 +1,23 @@
 const express = require('express');
 const router = express.Router();
 const usersControllers = require('../controllers/userController');
-const loginValidator = require('../validations/loginValidator');
-
-//middlewares
-const userLogged = require("../middlewares/userInSessionCheck");
-const uploadAvatar = require("../middlewares/uploadAvatar");
-
 //validations
-const registerValidator =require("../validations/registerValidator");
+const loginValidator = require('../validations/loginValidator');
+const registerValidator = require("../validations/registerValidator");
+//middlewares
+const userInSessionCheck = require("../middlewares/userInSessionCheck");
+const uploadFile = require("../middlewares/uploadAvatar");
 
 
-router.get('/registro', usersControllers.registro);
-
-router.get('/login', usersControllers.login);
+//rutas login
+router.get('/login', userInSessionCheck, usersControllers.login);
 router.post('/login', loginValidator, usersControllers.processLogin);
 router.get('/logout', usersControllers.logout);
 
 
-router.get("/register", userLogged, usersControllers.register);
-
-router.post("/register", registerValidator ,usersControllers.processRegister);
-
-
+//rutas registro
+router.get("/register", userInSessionCheck, usersControllers.register);
+router.post("/register", uploadFile.single('avatar'), registerValidator, usersControllers.processRegister);
 
 
 module.exports = router;
