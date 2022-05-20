@@ -3,6 +3,8 @@ const path = require('path')
 
 module.exports = {
     index: (req, res) => {
-        res.render('admin/adminIndex')
+        res.render('admin/adminIndex', {
+            titulo: "ADMIN"
+        })
     }
 }

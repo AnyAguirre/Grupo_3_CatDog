@@ -2,10 +2,13 @@ const express = require('express');
 const router = express.Router();
 const adminController = require('../controllers/admin/adminController')
 const adminProductsController = require('../controllers/admin/adminProductsController');
+const userProductsController = require('../controllers/userProductsController');
 const adminCheck = require('../middlewares/adminCheck')
 
-/* CRUD DE PRODUCTOS */
+/* Session */
+router.get('/', adminController.index);
 
+/* CRUD DE PRODUCTOS */
 /* GET - LISTADO DE PRODUCTOS */
 router.get('/productos', adminProductsController.list);
 /* GET - CREACION DE PRODUCTO */

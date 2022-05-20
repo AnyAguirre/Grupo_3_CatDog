@@ -5,22 +5,19 @@ const productsFilePath = path.join(__dirname, '../../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const writeProducts = (data) => fs.writeFileSync(productsFilePath, JSON.stringify(data), 'utf-8')
 /* const { products, writeProducts, getProducts } = require('../../data');
-const { validationResult } = require('express-validator'); */
+const { validationResult } = require('express-validator');  */
 
 module.exports = {
 
     //Muestra la lista de productos
     list: (req, res) => {
         res.render('admin/listproduct', {
-            titulo: "Listado de productos", 
             productos: products
         })
     },
     //Envia la vista de formulario de la creacion de producto
     productAdd: (req, res) => {
-        res.render('admin/addproduct', {
-            titulo: "Agregar producto"
-        })
+        res.render('admin/addproduct')
     },
     //Recibe los datos del form de la creacion y lo guarda en la DB
     productCreate: (req, res) => {
